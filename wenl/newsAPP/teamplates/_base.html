@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'mainPAGEnews:home' %}">1</a>
+        <a href="{% url 'mainPAGEnews:test' %}">2</a>
+    </nav>
+    {% block main %}{% endblock %}
+</body>
+</html>
